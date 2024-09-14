@@ -43,7 +43,7 @@ class FirstScreen extends StatelessWidget {
                           }
                         },
                         child: Obx(() =>  Container(height: 20,width: 20,color: _controller.check[index]=="1"?Colors.blue: Colors.white,child:_controller.check[index]=="1"? Icon(Icons.check,size: 17,):null,)))),
-                    Text(_controller.test[index],style: TextStyle(fontSize: 18, color: Colors.black45,fontWeight:FontWeight.bold, ),),
+                    Text(_controller.test[index],style:const TextStyle(fontSize: 18, color: Colors.black45,fontWeight:FontWeight.bold, ),),
                     GestureDetector(
                       onTap: (){
                         _controller.test.removeAt(index);
@@ -52,7 +52,7 @@ class FirstScreen extends StatelessWidget {
 
       
                       },
-                      child: Padding(
+                      child:const Padding(
                         padding: const EdgeInsets.only(right:10.0),
                         child: Icon(Icons.delete,size: 30,color: Colors.red,),
                       ))
